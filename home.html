@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <!-- Title of the HTML page -->
+	<title>Ordering Smoothie</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Link to external CSS file -->
+    <link href="css/styles.css" rel="stylesheet" />
+	<!-- Script tag to include external JavaScript file -->
+    <script src="js/json.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Heading for the smoothie ordering section -->
+        <h1>Build Your Own Smoothie</h1>
+        <!-- Form element for smoothie customization -->
+        <form id="smoothie-form">
+            <!-- Label for selecting smoothie size -->
+            <label for="size">Select Size:</label>
+            <!-- Dropdown menu for smoothie size selection -->
+            <select id="size" name="size">
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select><br>
+
+            <!-- Label for selecting fruit -->
+            <label for="fruit">Select Fruit:</label>
+            <!-- Dropdown menu for fruit selection -->
+            <select id="fruit" name="fruit">
+                <option value="Banana">Banana</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Mango">Mango</option>
+                <option value="Kiwi">Kiwi</option>
+                <option value="Apple">Apple</option>
+                <option value="Blueberry">Blueberry</option>
+            </select><br>
+
+            <!-- Label for selecting liquid base -->
+            <label for="base">Select Your Liquid Base:</label>
+            <!-- Dropdown menu for liquid base selection -->
+            <select id="base" name="base">
+                <option value="Water">Water</option>
+                <option value="Coconut-Milk">Coconut Milk</option>
+                <option value="Coconut-Water">Coconut Water</option>
+                <option value="Orange-Juice">Orange Juice</option>
+                <option value="Pineapple-Juice">Pineapple Juice</option>
+            </select><br>
+
+            <!-- Label for selecting topping -->
+            <label for="topping">Select Your Topping:</label>
+            <!-- Dropdown menu for topping selection -->
+            <select id="topping" name="topping">
+                <option value="Tapioca">Tapioca</option>
+                <option value="Mango-Chunks">Mango Chunks</option>
+                <option value="Chia-Seeds">Chia Seeds</option>
+                <option value="Apple-Jelly">Apple Jelly</option>
+                <option value="Almonds">Almonds</option>
+                <option value="Walnuts">Walnuts</option>
+            </select><br>
+
+            
+        </form>
+
+        <!-- Button to place the order -->
+        <button type="button" id="order-btn">Place the Order</button>
+        <!-- Placeholder for order details -->
+        <div id="output"></div>
+    </div>
+</body>
