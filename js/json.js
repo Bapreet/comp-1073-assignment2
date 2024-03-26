@@ -29,6 +29,7 @@ class Smoothie{
         const fruitImage = document.createElement("img");
         let image;
         
+        //if else for displaying different smoothies for different fruits
         if (this.fruit.toLowerCase() === 'banana'){
             image = 'images/banana_smoothie.webp';
         }
